@@ -30,7 +30,7 @@ class OperatableStateMachine(PreemptableStateMachine):
     def __init__(self, *args, **kwargs):
         super(OperatableStateMachine, self).__init__(*args, **kwargs)
         self._message = None
-        self._rate = rospy.Rate(10)
+        self._rate = rospy.Rate(50)
 
         self.id = None
         self.autonomy = None
